@@ -1,4 +1,6 @@
-Hey! Well, you got me... here's my blog on the some of the stuff I find interesting. I would like to tell you that these posts are going to be consistent and that I'll stick with consistent themes. 
+Hey! 
+
+Well, you got me... here's my blog on the some of the stuff I find interesting. I would like to tell you that these posts are going to be consistent and that I'll stick with consistent themes. 
 
 But then yet again... Where would be the fun in that?
 
