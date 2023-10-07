@@ -4,12 +4,6 @@ Hi! My name is Abram, and I'm a student at Brigham Young University - Idaho stud
 
 Here's my resume:
 
----
-layout: cv
-title: W. Abram Astle's Resume
----
-# W. Abram Astle
-
 <div id="webaddress">
 | <a href="https://www.linkedin.com/in/abram-astle-3194a2279/">LinkedIn</a>
 | <a href="https://github.com/c-a-s-t-l-e">GitHub</a>
