@@ -1,7 +1,13 @@
-Hello and welcome to this blog. Edit the `index.md` file to change this content. All pages on the blog, including this one, use [Markdown](https://guides.github.com/features/mastering-markdown/). You can include images:
+Hey! Well, you got me... here's my blog on the some of the stuff I find interesting. I would like to tell you that these posts are going to be consistent and that I'll stick with consistent themes. But then yet again... Where would be the fun in that?
 
-![Image of fast.ai logo](images/castle_engraving.jpg)
+![Image of castle engraving](images/castle_engraving.jpg)
 
-## This is a title
+### The Purpose of This Blog
 
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
+My goal is two-fold:
+
+1. Help you understand what I've been learning
+
+2. Help me understand what I've been learning
+
+Let's both come away happier and more knowledgable.
