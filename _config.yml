@@ -15,10 +15,10 @@ email: castle676767@gmail.com
 twitter_username:
 
 # Set this to true to get LaTeX math equation support
-use_math:
+use_math: true
 
 # Add your Google Analytics ID here if you have one and want to use it
-google_analytics:
+google_analytics: G-FQL6XEGK4Z
 
 # Everything below here can be ignored, unless you want to change the theme entirely
 theme: minima
