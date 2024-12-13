@@ -2,6 +2,7 @@
 
 ## W. Abram Astle - Potato Lovin' Idahoan and Builder 🥔
 
+---
 ### Education 🎓
 | Degree | Institution | Graduation Date | GPA |
 |--------|-------------|-----------------|-----|
@@ -10,7 +11,6 @@
 | A.A. LIberal Arts | College of Southern Idaho | May 2019 | 4.0 |
 
 ---
-
 ### Work Experience 🔨
 | Position | Company / Organization | Dates | Most Notable Accomplishment | Technology Used |
 |----------|---------|-------|-----------------|-----------------|
@@ -22,7 +22,6 @@
 | Undergraduate Research Assistant | University of Idaho | May 2020 - August 2020 | Wrote Python code that contributed to a faster method of processing X-ray images for machine learning purposes  | Python, Fortran |
 
 ---
-
 ### Personal and Team Projects 👤
 | Title | Description | Technology Used | Status | URL |
 |--------|-------------|-----------------|---- | -----|
@@ -33,7 +32,6 @@
 | BHSA Query Generator | A web app that allows a user to generate text-fabric queries to search the Biblia Hebraica Stuttgartensia (Amstelodamensis), otherwise known as the BHSA. | Python Shiny | Under Development | https://c-a-s-t-l-e.github.io/bhsa-query-generator/ |
 
 ---
-
 ### Other Technologies I'm Somewhat Familiar With ⚙️
 
 - Apache Spark
