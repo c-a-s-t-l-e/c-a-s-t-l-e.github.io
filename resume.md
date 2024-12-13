@@ -11,7 +11,7 @@
 
 ## Work Experience
 | Position | Company / Organization | Dates | Most Notable Accomplishment | Technology Used |
-|----------|---------|-------|-----------------|-----------------|-----------------|
+|----------|---------|-------|-----------------|-----------------|
 | VP of Projects, Project Manager, Team Member | BYU-Idaho Data Science Society | April 2023 - Current | Collaborated on the development of a web app that resulted in a budget increase from 18,000 to 240,000 dollars for the City of Rexburg Fire Department | Python, R, SQL, Streamlit, Shiny |
 | Data Science Team Project Manager, Team Member | Aspire365 | April 2024 - December 2024 | Lead a technical team in the creation of an in-house data analytics web application for Aspire365, a hybrid remote, in-person mental health company | Shiny, R, Javascript |
 | Data Science Lab Tutor| BYU-Idaho | September 2023 - Current | Have assisted dozens of students in solving data science problems| Python, R |
