@@ -1,4 +1,4 @@
-# W. Abram Astle
+# W. Abram Astle - Potato Lovin' Idahoan and Builder
 
 ## Education
 | Degree | Institution | Graduation Date | GPA |
