@@ -6,6 +6,7 @@
 ### Education 🎓
 | Degree              | Institution                          | Graduation Date | GPA |
 |---------------------|--------------------------------------|-----------------|-----|
+
 | B.S. Data Science   | Brigham Young University - Idaho    | April 2025      | 4.0 |
 | A.S. General Studies| University of Idaho                  | December 2020   | 4.0 |
 | A.A. Liberal Arts  | College of Southern Idaho           | May 2019        | 4.0 |
