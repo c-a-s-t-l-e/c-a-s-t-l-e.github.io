@@ -26,6 +26,7 @@
 | Undergraduate Research Assistant | University of Idaho | May 2020 - August 2020 | Wrote Python code that contributed to a faster method of processing X-ray images for machine learning purposes  | Python, Fortran |
 
 ---
+
 ### Personal and Team Projects 👤
 | Title | Description | Technology Used | Status | URL |
 |--------|-------------|-----------------|---- | -----|
@@ -34,6 +35,8 @@
 | general-conference-extractor | A python package that allows you to extract all the speeches given for the general conferences of the Church of Jesus Christ of Latter-day Saints from April 1971 to the most recent month and year. | Python | Maintained | https://c-a-s-t-l-e.github.io/general-conference-extractor/ | 
 | Semantic Data Dictionaries App | A web app that allows you to upload data dictionaries and see if there are columns that are possibly related based on meaning among them. | Python Shiny | Under Development | https://c-a-s-t-l-e.github.io/semantic_data_dictionaries_app/ |
 | BHSA Query Generator | A web app that allows a user to generate text-fabric queries to search the Biblia Hebraica Stuttgartensia (Amstelodamensis), otherwise known as the BHSA. | Python Shiny | Under Development | https://c-a-s-t-l-e.github.io/bhsa-query-generator/ |
+
+---
 
 ### Other Technologies I'm Somewhat Familiar With ⚙️
 
