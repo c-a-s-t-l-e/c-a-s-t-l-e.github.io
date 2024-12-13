@@ -1,6 +1,6 @@
-# W. Abram Astle - Potato Lovin' Idahoan and Builder
+# W. Abram Astle - Potato Lovin' Idahoan and Builder 🥔
 
-## Education
+## Education 🎓
 | Degree | Institution | Graduation Date | GPA |
 |--------|-------------|-----------------|----|
 | B.S.. Data Science | Brigham Young University - Idaho | April 2025 | 4.0 |
@@ -9,7 +9,7 @@
 
 ---
 
-## Work Experience
+## Work Experience 🔨
 | Position | Company / Organization | Dates | Most Notable Accomplishment | Technology Used |
 |----------|---------|-------|-----------------|-----------------|
 | VP of Projects, Project Manager, Team Member | BYU-Idaho Data Science Society | April 2023 - Current | Collaborated on the development of a web app that resulted in a budget increase from 18,000 to 240,000 dollars for the City of Rexburg Fire Department | Python, R, SQL, Streamlit, Shiny |
@@ -20,7 +20,7 @@
 | Undergraduate Research Assistant | University of Idaho | May 2020 - August 2020 | Wrote Python code that contributed to a faster method of processing X-ray images for machine learning purposes  | Python, Fortran |
 
 ---
-## Personal and Team Projects
+## Personal and Team Projects 👤
 | Title | Description | Technology Used | Status | URL |
 |--------|-------------|-----------------|---- | -----|
 | mindDump | A minimalist Android journal app that promotes the therapeutic writing technique of brain dumps.| Flutter, Dart | Maintained | https://github.com/c-a-s-t-l-e/mindDump/ |
@@ -29,7 +29,7 @@
 | Semantic Data Dictionaries App | A web app that allows you to upload data dictionaries and see if there are columns that are possibly related based on meaning among them. | Python Shiny | Under Development | https://c-a-s-t-l-e.github.io/semantic_data_dictionaries_app/ |
 | BHSA Query Generator | A web app that allows a user to generate text-fabric queries to search the Biblia Hebraica Stuttgartensia (Amstelodamensis), otherwise known as the BHSA. | Python Shiny | Under Development | https://c-a-s-t-l-e.github.io/bhsa-query-generator/ |
 
-## Other Technologies I'm Somewhat Familiar With
+## Other Technologies I'm Somewhat Familiar With ⚙️
 
 - Apache Spark
 - Docker
