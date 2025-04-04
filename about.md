@@ -1,4 +1,7 @@
-# About
+---
+title: About
+nav: true
+---
 
 ![Image of me with a funny mustache](/images/mustachio_me.jpeg)
 
