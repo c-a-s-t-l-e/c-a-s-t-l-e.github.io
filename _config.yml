@@ -20,19 +20,6 @@ use_math: true
 # Add your Google Analytics ID here if you have one and want to use it
 google_analytics: G-FQL6XEGK4Z
 
-# Edit the navigation links:
-nav_links:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
-  - title: "Resume"
-    url: /resume/
-    title: "Browse by Category"
-    url: /browse_by_category/
-  - title: "Search"
-    url: /search.html
-
 # Everything below here can be ignored, unless you want to change the theme entirely
 theme: minima
 plugins:
