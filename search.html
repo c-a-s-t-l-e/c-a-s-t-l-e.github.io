@@ -1,0 +1,21 @@
+---
+layout: default
+title: Search
+---
+
+<h1>Search</h1>
+
+<input type="text" id="search-input" placeholder="Type to search..." />
+<ul id="results-container"></ul>
+
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ "/search.json" | relative_url }}',
+    searchResultTemplate: '<li><a href="{url}">{title}</a><br><small>{date}</small></li>',
+    noResultsText: 'No posts found',
+    limit: 10, // optional: define how many results to show
+    fuzzy: false  // optional: set to true to enable fuzzy search
+  });
+</script>
