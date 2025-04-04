@@ -3,8 +3,6 @@ title: My Resume
 nav: true
 ---
 
-# My Resume
-
 ## W. Abram Astle
 
 ---
