@@ -5,6 +5,9 @@ title: Search
 
 <h1>Search</h1>
 
+<!-- Include the SimpleJekyllSearch library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-jekyll-search/1.9.0/simple-jekyll-search.min.js"></script>
+
 <input type="text" id="search-input" placeholder="Type to search..." />
 <ul id="results-container"></ul>
 
@@ -16,76 +19,105 @@ title: Search
     if (results && results.length > 0) {
       results.forEach(result => {
         const li = document.createElement('li');
+        li.className = 'search-result';
+        
         const a = document.createElement('a');
         a.href = result.url;
         a.textContent = result.title;
+        a.className = 'result-title';
 
-        const date = document.createElement('small');
+        const date = document.createElement('div');
         date.textContent = result.date;
+        date.className = 'result-date';
 
-        const excerpt = document.createElement('p');
-        excerpt.innerHTML = getRelevantExcerpt(result.content, searchTerm); //highlight search term
+        const excerpt = document.createElement('div');
+        excerpt.innerHTML = getRelevantExcerpt(result.content, searchTerm);
+        excerpt.className = 'result-excerpt';
 
         li.appendChild(a);
-        li.appendChild(document.createElement('br'));
         li.appendChild(date);
-        li.appendChild(document.createElement('br'));
         li.appendChild(excerpt);
         resultsContainer.appendChild(li);
       });
-    } else {
-      resultsContainer.innerHTML = '<p>No posts found</p>';
+    } else if (searchTerm.length > 0) {
+      resultsContainer.innerHTML = '<p>No posts found matching "' + searchTerm + '"</p>';
     }
   }
 
   function getRelevantExcerpt(content, searchTerm) {
-    const searchTermRegex = new RegExp(searchTerm, 'gi'); // 'gi' for global, case-insensitive search
-    const match = searchTermRegex.exec(content);
-
-    if (match) {
-      const startIndex = Math.max(0, match.index - 50); // Start 50 characters before the match
-      const endIndex = Math.min(content.length, match.index + searchTerm.length + 150); // End 150 characters after
-
-      let relevantExcerpt = content.substring(startIndex, endIndex);
-
-      // Highlight the search term
-      relevantExcerpt = relevantExcerpt.replace(searchTermRegex, '<span class="highlight">$&</span>'); // $& is the matched substring
-
-      return '...' + relevantExcerpt + '...'; // Add ellipses to indicate truncation
-    } else {
-      return content.substring(0, 200) + '...'; // If no match, return the beginning of the content
+    if (!content) return '';
+    
+    const searchTermRegex = new RegExp(searchTerm, 'gi');
+    const matches = [...content.matchAll(searchTermRegex)];
+    
+    if (matches.length === 0) {
+      return content.substring(0, 200) + '...';
     }
+
+    // Get all match positions and build excerpts around each
+    let excerpts = [];
+    matches.forEach(match => {
+      const startIndex = Math.max(0, match.index - 50);
+      const endIndex = Math.min(content.length, match.index + searchTerm.length + 50);
+      
+      let excerpt = content.substring(startIndex, endIndex);
+      excerpt = excerpt.replace(searchTermRegex, '<span class="highlight">$&</span>');
+      excerpts.push('...' + excerpt + '...');
+    });
+
+    // Join excerpts with separator if multiple matches
+    return excerpts.join('<br><br>');
   }
   
-  // Add highlight class to the page, to style the search term
+  // Add styles for better presentation
   const style = document.createElement('style');
   style.innerHTML = `
     .highlight {
       background-color: yellow;
       font-weight: bold;
     }
+    .search-result {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    .result-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #0366d6;
+      text-decoration: none;
+    }
+    .result-date {
+      color: #666;
+      font-size: 0.9em;
+      margin: 5px 0;
+    }
+    .result-excerpt {
+      color: #333;
+      line-height: 1.5;
+    }
   `;
   document.head.appendChild(style);
 
-  // Perform the search
+  // Initialize search
   document.getElementById('search-input').addEventListener('keyup', function(event) {
     const searchTerm = event.target.value.trim();
 
     if (searchTerm.length > 0) {
       SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'), //unused but needed for the library to initialize
-        resultsContainer: document.getElementById('results-container'), //unused
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
         json: '{{ "/search.json" | relative_url }}',
-        noResultsText: 'No posts found',
+        noResultsText: '',
         limit: 10,
         fuzzy: true,
-                searchBy: ['title', 'content'],
+        searchBy: ['title', 'content'],
         success: function(results) {
-          displaySearchResults(results, searchTerm); // Call displaySearchResults with results and search term
+          displaySearchResults(results, searchTerm);
         }
       });
     } else {
-      document.getElementById('results-container').innerHTML = ''; // Clear results if search term is empty
+      document.getElementById('results-container').innerHTML = '';
     }
   });
 </script>
