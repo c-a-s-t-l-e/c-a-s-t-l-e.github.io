@@ -13,10 +13,10 @@ title: Search
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '{{ "/search.json" | relative_url }}',
-    searchResultTemplate: '<li><a href="{url}">{title}</a><br><small>{date}</small></li>',
+    searchResultTemplate: '<li><a href="{url}">{title}</a><br><small>{date}</small><br><p>{excerpt}</p></li>', // included excerpt for context
     noResultsText: 'No posts found',
     limit: 10, // optional: define how many results to show
-    fuzzy: true  // optional: set to true to enable fuzzy search
+    fuzzy: true,  // optional: set to true to enable fuzzy search
     searchBy: ['title', 'content'] // Specify fields to search
   });
 </script>
