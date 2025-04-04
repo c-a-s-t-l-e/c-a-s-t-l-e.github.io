@@ -110,7 +110,7 @@ title: Search
         json: '{{ "/search.json" | relative_url }}',
         noResultsText: '',
         limit: 10,
-        fuzzy: true,
+        fuzzy: false,
         searchBy: ['title', 'content'],
         success: function(results) {
           displaySearchResults(results, searchTerm);
