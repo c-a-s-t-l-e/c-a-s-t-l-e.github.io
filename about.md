@@ -1,6 +1,7 @@
 ---
 title: About
 nav: true
+order: 1
 ---
 
 ![Image of me with a funny mustache](/images/mustachio_me.jpeg)
