@@ -1,6 +1,7 @@
 ---
 title: My Resume
 nav: true
+order: 2
 ---
 
 ## W. Abram Astle
