@@ -10,7 +10,7 @@ order: 2
 ### Education 🎓
 | Degree              | Institution                          | Graduation Date | GPA |
 |---------------------|--------------------------------------|-----------------|-----|
-|PhD Data Science and Engineering | University of Tennessee | TBD | TBD |
+|Ph.D. Data Science and Engineering | University of Tennessee | TBD | TBD |
 | B.S. Data Science   | Brigham Young University - Idaho    | April 2025      | 4.0 |
 | A.S. General Studies| University of Idaho                  | December 2020   | 4.0 |
 | A.A. Liberal Arts  | College of Southern Idaho           | May 2019        | 4.0 |
